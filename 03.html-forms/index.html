@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <label for="username">Username</label>
+            <br>
+            <input type="text" name="username" id="username" required minlength="4" maxlength="12"
+                placeholder="jhon_doe">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <br>
+            <input type="number" name="age" id="age" required min="0" max="100">
+
+        </div>
+        <div>
+            <label for="pw">Password</label>
+            <br>
+            <input type="password" id="pw" name="pw" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="email" readonly value="example@gmail.com">
+        </div>
+
+
+
+        <input type="color">
+
+        <input type="date">
+
+        <input type="datetime-local">
+
+        <input type="file" multiple accept="image/png">
+
+        <input type="image">
+
+        <input type="range" step="5" min="0" max="10">
+
+
+        <input type="search" name="" id="search">
+        <hr>
+
+        <input type="time" name="" id="time">
+
+        <input type="url">
+        <br><br>
+
+        <label for="">Select your tech stack:</label>
+        <br>
+        <input type="checkbox" id="html">
+        <label for="html">html</label>
+
+        <input type="checkbox" id="css" checked>
+        <label for="css">css</label>
+
+        <input type="checkbox" id="javacript">
+        <label for="javacript">javacript</label>
+
+        <input type="checkbox" id="c#">
+        <label for="c#">c#</label>
+
+
+        <br><br>
+        <label for="">gender</label>
+        <br>
+
+        <input type="radio" name="gender" id="female" checked>
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">male</label>
+        <br><br>
+        <!-- <button type="submit">
+            lorem <span style="color: red">ipsum</span>
+        </button>
+        <button type="reset">Reset</button>
+ -->
+
+
+
+
+        <!-- <label for="">Select ur country:</label> -->
+        <br>
+        <select name="country" id="country">
+            <!-- <option value="aze" selected disabled>select ur country</option> -->
+            <option value="aze" selected hidden>select ur country</option>
+            <option value="aze">Azerbaijan</option>
+            <option value="ger">Germany</option>
+            <option value="geo">Georgia</option>
+        </select>
+
+
+        <br>
+        <br>
+
+        <textarea name="message" id="message" placeholder="enter ur message here.." rows="10" cols="50"></textarea>
+        <br>
+        <br>
+
+        <select name="cars" id="cars">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+
+
+    <!-- <script>
+        const countrySelect = document.querySelector("#country")
+
+
+        countrySelect.addEventListener("change", (e)=>{
+            console.log(e.target.value);
+        }) -->
+    </script>
+</body>
+
+</html>
