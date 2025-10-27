@@ -10,6 +10,16 @@
 
     <link rel="icon" type="image/x-icon" href="./assests/images/istockphoto-615422436-612x612.jpg">
     <title>HTML - intro</title>
+
+    <style>
+        .text {
+            background-color: teal;
+        }
+
+        #mainHeading {
+            color: orange;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +30,7 @@
     <h5>Hello, HTML!</h5>
     <h6>Hello, HTML!</h6>
 
-    <p>Lorem, ipsum dolor sit amet
+    <p class="text">Lorem, ipsum dolor sit amet
 
         consectetur adipisicing elit. Soluta nobis odit quod quam aperiam
 
@@ -44,7 +54,7 @@ It preserves both spaces     and line breaks.
     <br>
     <strong>important text</strong>
     <br>
-    <i> - Italic text </i>
+    <i class="text"> - Italic text </i>
     <br>
 
     <em> - Emphasized text </em>
@@ -80,7 +90,6 @@ It preserves both spaces     and line breaks.
 
 
 
-
     <hr>
 
 
@@ -101,9 +110,6 @@ It preserves both spaces     and line breaks.
         <li>javascript</li>
     </ol>
 
-
-
-
     <ol>
         <li>html</li>
         <li>css</li>
@@ -119,6 +125,94 @@ It preserves both spaces     and line breaks.
         </ul>
         <li>Git</li>
     </ol>
+
+
+    <hr>
+
+    <h1 id="mainHeading" class="main-heading bg-orange">Let's <span style="color: red; font-size: 3rem;">jump</span>
+        back in!</h1>
+    <a href="#">youtube</a>
+    <a href="#">github</a>
+    <button>click</button>
+
+
+    <div id="banner" class="bg-teal">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, perferendis eligendi animi veniam blanditiis
+            similique! Iusto excepturi fugiat illum.</p>
+        <img src="" alt="">
+    </div>
+
+
+    <span> i am span element</span>
+    <span class="bg-orange"> i am span element</span>
+    <span> i am span element</span>
+    <div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#">a</a>
+                </li>
+                <li>
+                    <a href="#">b</a>
+                </li>
+                <li>
+                    <a href="#">c</a>
+                </li>
+                <li>
+                    <a href="#">d</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="logo"></h2>
+            <input type="text">
+            <ul>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div></div>
+
+
+        <p class="text">Lorem ipsum dolor sit amet.</p>
+        <p class="text">Lorem ipsum dolor sit amet.</p>
+        <p class="text">Lorem ipsum dolor sit amet.</p>
+        <p class="text">Lorem ipsum dolor sit amet.</p>
+        <p class="text">Lorem ipsum dolor sit amet.</p>
+        <p class="text">Lorem ipsum dolor sit amet.</p>
+
+
+
+        <hr>
+
+        <!-- <iframe src="https://iticket.az/en" frameborder="0" width="100%" height="600"></iframe> -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.428674853692!2d49.85137057586566!3d40.37719087144589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0b5e01!2sCode%20Academy!5e0!3m2!1sen!2saz!4v1761546937938!5m2!1sen!2saz"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/r9_7EQLINzw?si=u4KYF3xWsugavAlw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <hr>
+
+
+        <video width="320" height="240" controls autoplay loop muted>
+            <source src="./assests/videos/movie.mp4" type="video/mp4">
+            <source src="./assests/videos/movie.ogg" type="video/ogg">
+
+            Your browser does not support the video tag.
+        </video>
+    </div>
 </body>
 
 </html>
