@@ -5,22 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
     <!-- HEADER SECTION -->
-    <header>
+    <header id="header">
         <h2>Start Bootstrap</h2>
         <nav>
             <ul>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -73,6 +78,18 @@
             </div>
         </section>
 
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About</h2>
+            <span>🌟</span>
+            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete
+                source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
+                customization.
+
+                You can create your own custom avatar for the masthead, change the icon in the dividers, and add your
+                email address to the contact form to make it fully functional!</p>
+                <button>Free Download</button>
+        </section>
         <!-- CONTACT SECTION -->
         <section id="contact">
             <h2>Contact Me</h2>
@@ -129,13 +146,16 @@
             </div>
             <div>
                 <h2>About Freelancer</h2>
-                <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#">Start Bootstrap</a> .</p>
+                <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#">Start Bootstrap</a> .
+                </p>
             </div>
         </div>
         <div id="footerBottom">
             <p>Copyright © Your Website 2023</p>
         </div>
     </footer>
+
+    <a href="#header">back to top</a>
 </body>
 
 </html>
