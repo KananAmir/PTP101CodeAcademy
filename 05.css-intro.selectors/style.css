@@ -1,0 +1,80 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+/* CSS - cascading style sheets */
+
+/* inline css
+internal css
+external css */
+
+/* p {
+    background-color: orange;
+} */
+
+.text{
+    background-color:burlywood;
+}
+
+
+/* p{
+    background-color: blue;
+} */
+
+
+
+#heading{
+    color: red;
+}
+
+.heading {
+    color: rgb(42, 63, 165);
+}
+
+
+h1{
+    color: green !important;
+    /* font-size: 12px; */
+}
+
+/* css specificity */
+
+/* !important , inline css, id, class, tag, global selector, user agent */
+
+
+
+/* .container .parag{
+    color: blue;
+} */
+
+.container > .parag{
+    color: blue;
+}
+
+
+
+span.text{
+    border: 1px solid;
+}
+
+
+.text.bg-red {
+    background-color: red;
+}
+
+.text{
+    background-color: orange;
+}
+
+/* * - 0
+tag - 1
+class - 10
+id - 100
+inline css -1000 */
+
+
+.a, .b, .c{
+    
+}
