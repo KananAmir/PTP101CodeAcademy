@@ -1,0 +1,49 @@
+.heading {
+    /* color: orange; */
+    /* color: rgb(red, green, blue); */
+    color: rgb(255, 0, 0);
+    color: rgb(0, 255, 0);
+    color: rgb(0, 0, 255);
+    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 0);
+    color: rgb(255, 0, 255);
+    color: rgb(0, 255, 255);
+    color: rgba(255, 0, 0, 0.6);
+
+    color: #000000;
+    color: #000;
+    color: #ffffff;
+    color: #fff;
+    color: #140576;
+    color: #ad0a4b;
+    color: #ad0a4b90;
+    color: #abc;
+}
+
+.box {
+    width: 50%;
+    height: 50vh;
+    border: 2px solid;
+    margin: 0 auto;
+    background-image: linear-gradient(to right bottom, red, orange, blue, teal);
+    background-image: linear-gradient(to bottom, red, orange, blue, teal);
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+    background-image: radial-gradient(circle, red, yellow, green);
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+    background-image: conic-gradient(red, yellow, green, blue, black);
+}
+
+
+
+.container{
+    width: 500px;
+    border: 2px solid;
+    margin: 100px auto;
+    padding: 2rem;
+    /* background-color: rgba(95, 158, 160, 0.6); */
+    background-color: rgb(95, 158, 160);
+    background: #5bd14b;
+    background: linear-gradient(90deg, rgba(91, 209, 75, 0.65) 0%, rgba(9, 9, 121, 1) 47%, rgba(0, 212, 255, 1) 100%);
+    opacity: 0.6;
+}

@@ -1,0 +1,43 @@
+/* box model */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 20px solid red;
+    background-color: orange;
+    /* padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px; */
+
+    /* padding: 10px 20px 30px 40px; */
+    /* padding: 10px 20px; */
+    padding: 10px;
+    /* margin: 20px 0px; */
+    margin: 20px;
+    /* box-sizing: content-box; */
+    /* box-sizing: border-box; */
+    display: inline-block;
+}
+
+.box.box-2{
+    margin-top: 50px;
+}
+
+.btn{
+    padding: 16px 32px;
+    margin: 10px;
+}
+
+span{
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+    /* display: inline-block; */
+    margin: 20px;
+}

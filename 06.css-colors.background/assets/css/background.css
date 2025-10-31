@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text {
+    background-color: #0000ff;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.wrapper {
+    width: 60%;
+    height: 500px;
+    border: 5px solid;
+    margin: 0 auto;
+    background-color: orange;
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUZD6t1GqPIUTSk0zJsP8wlXtwnwBU7A4t9w&s'); */
+    /* background-image: url("../media/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-position: top right;
+    background-position: bottom right;
+    background-position: bottom left;
+    background-position: center;
+    background-size: cover; */
+    /* background-size: contain; */
+
+    background: orange url('../media/cover.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.wrapper h1,
+p {
+    color: #fff;
+    text-align: center;
+}
+
+section.bg {
+    border: 2px solid;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#banner {
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/995/482/desktop-wallpaper-beautiful-nature-with-quotes-for-facebook-cover-page-facebook-cover.jpg");
+}
+
+#about {
+    background-image: url("https://wallpapercave.com/wp/wp3173677.jpg");
+}
+
+#contact {
+    background-image: url("https://e0.pxfuel.com/wallpapers/846/522/desktop-wallpaper-1200-x-800.jpg");
+}
+
+/* rgba vs opacity */
