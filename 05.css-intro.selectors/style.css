@@ -35,7 +35,7 @@ external css */
 
 
 h1{
-    color: green !important;
+    /* color: green !important; */
     /* font-size: 12px; */
 }
 
@@ -75,6 +75,149 @@ id - 100
 inline css -1000 */
 
 
-.a, .b, .c{
+/* .a, .b, .c{
     
+} */
+
+.heading, .text{
+    font-family: monospace;
 }
+
+.container *{}
+
+/* 
+.title + p{
+    border: 1px solid;
+} */
+
+.title ~ p{
+    border: 1px solid;
+}
+
+
+a[target='_blank']{
+    color: orange;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    background-color: red;
+}
+
+.box:hover{
+    background-color: teal;
+}
+
+#heading:hover{
+    color: blue;
+}
+
+
+.contact-us-btn{
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid teal;
+    background-color: teal;
+    color: white;
+    font-family: 1.2rem;
+    transition: all .6s;
+}
+
+.contact-us-btn:hover{
+    background-color: transparent;
+    color: teal;
+}
+
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:active{
+    color: orange;
+}
+a:hover{
+    background-color: blue;
+}
+
+
+/* ul li:first-child{
+    background-color: red;
+} */
+
+/* ul li:last-child{
+    background-color: red;
+} */
+
+/* ul li:nth-child(even){
+    background-color: red;
+} */
+
+/* ul li:nth-child(2n + 1){
+    background-color: red;
+} */
+
+/* ul li:nth-child(1), 
+ul li:nth-child(2), 
+ul li:nth-child(3){
+    color: orange;
+}  */
+
+
+.text-green{
+    color: green;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.text-green::first-line{
+    color: red;
+}
+.text-green::first-letter{
+    color: blue;
+    font-size: 2rem;
+}
+
+.text-green::selection{
+    background-color: yellow;
+    color: blue;
+}
+
+.text-green span{
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+}
+
+.text-green span::before{
+    content: "🔥";
+}
+/* 
+.text-green span::after{
+    content: "-text";
+} */
+
+/* .text-green span::after{
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+
+ul li:nth-of-type(odd){
+    color: red;
+}
+ 
+/* ul li:nth-child(odd){
+    color: red;
+} */
+
