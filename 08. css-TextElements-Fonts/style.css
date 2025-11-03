@@ -1,0 +1,93 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  /* font-style: normal; */
+}
+
+body {
+  color: blue;
+}
+.body-text {
+  /* width: 10000px;
+  height: 1000px; */
+
+  /* font-size: 1000%; */
+}
+
+.my-head-title {
+  display: inline;
+  color: red;
+  background-color: black;
+}
+.my-paragraphs {
+  /* Texti tutduğu yerə görə (Horizontal) mərkəzləmək */
+  /* text-align: center; */
+
+  /* Texti tutduğu yerə görə (Horizontal) sola atmaq */
+  /* text-align: left; */
+
+  /* Texti tutduğu yerə görə (Horizontal) sağa atmaq */
+  /* text-align: right; */
+
+  /* Textin ailgnment xüsusiyyətini yığışdırır */
+  /* text-align: none; */
+
+  /* text-align: justify; */
+
+  /* text-decoration: underline; */
+  /* text-decoration: overline; */
+  /* text-decoration: line-through; */
+}
+.website-links {
+  /* display: block; */
+  /* text-decoration: none; */
+  /* text-decoration: overline underline; */
+  /* text-decoration: wavy overline underline;
+  text-decoration-color: green;
+  color: red; */
+  font-size: 20%;
+}
+.transform {
+  /* text-transform: capitalize; */
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+
+  /* letter-spacing: 20px; */
+  /* line-height: 20px; */
+  /* word-spacing: 10px; */
+  /* text-indent: 10px; */
+
+  /*----------  */
+
+  font-variant: normal;
+  /* text-transform: uppercase; */
+}
+
+.big {
+  font-size: 50px;
+}
+.my-inline-elements {
+  display: inline;
+}
+
+.a {
+  font-family: "Courier New", Courier, monospace;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.b {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+}
+.c {
+  height: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: oblique;
+  font-weight: bolder;
+  /* font-weight: 100; */
+}
+.d {
+  font-family: tahoma;
+  font-style: italic;
+}
