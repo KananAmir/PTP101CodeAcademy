@@ -3,6 +3,8 @@
   padding: 0; */
   box-sizing: border-box;
   /* font-style: normal; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -72,22 +74,22 @@ body {
 }
 
 .a {
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
   font-style: oblique;
   font-weight: bolder;
 }
 .b {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   font-style: oblique;
 }
 .c {
   height: 100px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
   font-style: oblique;
   font-weight: bolder;
   /* font-weight: 100; */
 }
 .d {
-  font-family: tahoma;
+  /* font-family: tahoma; */
   font-style: italic;
 }
