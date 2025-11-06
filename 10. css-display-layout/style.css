@@ -5,10 +5,13 @@
   font-family: sans-serif;
   flex-wrap: nowrap;
 }
+#navbar {
+  padding-bottom: 24px;
+}
 .nav {
   border-bottom: 0.5px solid lightgrey;
 }
-.container {
+#navbar .container {
   height: 80px;
   margin-left: 5%;
   margin-right: 5%;
@@ -24,6 +27,7 @@
 }
 .input-container {
   position: relative;
+  width: 24%;
 }
 .search-icon {
   position: absolute;
@@ -44,7 +48,9 @@
 }
 .right-side {
   display: flex;
+  justify-content: end;
   gap: 16px;
+  width: 24%;
 }
 .menu-items {
   display: block;
@@ -56,4 +62,77 @@
   display: flex;
   gap: 8px;
   flex-direction: column;
+}
+
+.trending-title {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 56px;
+  margin-bottom: 40px;
+
+  .title {
+    font-size: 40px;
+    font-weight: 900;
+  }
+}
+.img-holder {
+  /* width: 440px; */
+  height: 385px;
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+#welcoming .container {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.img-container {
+  width: 48%;
+}
+.trending-container {
+  display: flex;
+  justify-content: space-between;
+}
+.text-container {
+  display: flex;
+  justify-content: start;
+}
+.test {
+  width: 48%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.date {
+  color: #999;
+}
+.sub-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+.body-text {
+  font-size: 14px;
+  color: #999;
+}
+.profile {
+  display: flex;
+  gap: 8px;
+  .little-img-holder {
+    height: 45px;
+    width: 45px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
