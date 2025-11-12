@@ -1,0 +1,129 @@
+/* display: inline, block, inline-block, flex, grid */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    /* row-gap: 20px;
+    column-gap: 10px; */
+    gap: 20px;
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: 200px auto auto; */
+    /* grid-template-columns: 200px auto 200px; */
+    /* grid-template-columns: 1fr 1fr 10fr; */
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 100px 100px; 
+    grid-template-rows: repeat(3, 100px); 
+    grid-template-rows: 1fr 2fr 1fr;  */
+
+    /* grid-template: 1fr 2fr 3fr / repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-container .item {
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.grid-container .item:nth-child(2) {
+    /* grid-column-start: 1;
+    grid-row-start: 1; */
+    /* order: 1; */
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+}
+.grid-container .item:nth-child(1) {
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+    grid-row: 2 / 4;
+    /* grid-column-start: 1; */
+}
+
+.grid-wrapper {
+    display: grid;
+    width: 80%;
+    background-color: blanchedalmond;
+    margin: 100px auto;
+    border: 1px solid;
+    grid-template-areas:
+        "header header header"
+        "sidebar content1 content1"
+        "sidebar content2 content3"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+#content-1 {
+    grid-area: content1;
+}
+#content-2 {
+    grid-area: content2;
+}
+#content-3 {
+    grid-area: content3;
+}
+
+.grid-wrapper * {
+    border: 1px solid;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "sidebar home home"
+        "sidebar about contact"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.home {
+    grid-area: home;
+}
+
+.about {
+    grid-area: about;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+
+.container div{
+    border: 1px solid;
+    padding: 20px;
+}

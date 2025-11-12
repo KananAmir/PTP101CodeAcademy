@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80%;
+    height: 60vh;
+    border: 2px solid;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: center; */
+    /* flex-direction: row-reverse;
+    justify-content: flex-start; */
+
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap;
+    flex-direction: row-reverse; */
+    /* flex-flow: row-reverse wrap; */
+
+    /* flex-wrap: wrap; */
+
+    /* align-content: flex-end;
+    align-content: center;
+    align-content: space-between; */
+}
+
+.wrapper .box {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    border: 4px solid;
+    font-size: 2rem;
+    color: white;
+}
+
+.wrapper .box:nth-child(odd) {
+    background-color: orange;
+    /* height: 200px; */
+}
+
+.wrapper .box:nth-child(3) {
+    background-color: red;
+    order: -1;
+    flex-grow: 1;
+}
+.wrapper .box:nth-child(4) {
+    background-color: green;
+    order: 1;
+    flex-grow: 3;
+}
+
+.wrapper .box:nth-child(1) {
+    align-self: flex-end;
+}
+.wrapper .box:nth-child(2) {
+    align-self: center;
+}
+
+
+
