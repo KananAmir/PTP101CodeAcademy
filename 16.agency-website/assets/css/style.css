@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #28293e;
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 3rem;
+}
+.header nav ul a {
+    color: #fff;
+}
+
+.header .contact-btn {
+    width: 138px;
+    height: 48px;
+    color: #fff;
+    border: 1px solid #ffffff60;
+    background-color: transparent;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header .menu {
+    display: none;
+}
+
+#banner {
+    background-color: #28293e;
+}
+
+#banner .banner {
+    display: flex;
+    padding: 4rem 0;
+}
+
+.banner .banner-content,
+.banner .banner-photo {
+    width: 50%;
+}
+
+.banner-photo img {
+    width: 100%;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-right: 10%;
+    position: relative;
+}
+
+.banner-content > span {
+    color: #ef6d58;
+    text-transform: uppercase;
+}
+.banner-content h1 {
+    color: #fff;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    position: relative;
+    z-index: 1;
+}
+.banner-content > p {
+    font-size: 1rem;
+    color: #ffffff64;
+    line-height: 32px;
+}
+
+.banner-content .btns .how-we-work {
+    background-color: #ef6d58;
+    text-transform: uppercase;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #ef6d58;
+    transition: all 0.6s;
+}
+.banner-content .btns .how-we-work:hover {
+    background-color: transparent;
+    color: #ef6d58;
+}
+.banner-content .btns .contact-us {
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.feedback {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.feedback p {
+    color: #ffffff64;
+}
+.feedback span {
+    color: #ffffff;
+}
+
+.banner-content .star {
+    width: 148px;
+    position: absolute;
+    right: 20%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header .menu {
+        display: block;
+    }
+
+    .header nav,
+    .header .contact-btn {
+        display: none;
+    }
+
+    #banner .banner {
+        padding: 2rem 0;
+        flex-direction: column-reverse;
+        row-gap: 2rem;
+    }
+
+    .banner .banner-content,
+    .banner .banner-photo {
+        width: 100%;
+    }
+
+    .banner .banner-content{
+        padding-right: 0;
+    }
+
+    .banner-content .star {
+        display: none;
+    }
+
+    .banner-content h1{
+        font-size: 56px;
+    }
+}
