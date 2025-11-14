@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css units: px, rem, em, vh, vw, %  */
+
+/* 1rem = 16px (default font-size of browser) */
+.heading{
+    /* font-size: 32px; */
+    font-size: 1.5rem; /* 1.5 * 16 = 24px */
+}
+
+.heading span{
+    color: teal;
+    font-size: 3em;
+}
+
+.wrapper{
+    width: 600px;
+    height: 600px;
+    /* margin: 0 auto; */
+    border: 5px solid;
+}
+
+.wrapper .box{
+    /* width: 50vw; */
+    width: 50%;
+    height: 100vh;
+    background-color: orange;
+}

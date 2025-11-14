@@ -131,6 +131,84 @@ header .header {
     right: 20%;
 }
 
+#partners {
+    background-color: #fdf0e9;
+}
+
+#partners .partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-bottom: 1px solid #f3d1bf;
+    padding: 4rem 0;
+}
+
+footer {
+    background-color: #fdf0e9;
+    padding: 4rem 0;
+}
+
+footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #f3d1bf;
+}
+
+.footer-top .logo {
+    font-size: 1.5rem;
+    color: #391400;
+}
+
+.footer-top ul {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.footer-top ul.social-media {
+    flex-direction: row;
+    gap: 1rem;
+}
+.footer-top ul.social-media a {
+    width: 48px;
+    height: 48px;
+    background: #ef6d58;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top h5 {
+    margin-bottom: 1rem;
+    color: #ef6d58;
+    text-transform: uppercase;
+}
+
+.footer-top ul a {
+    color: #391400;
+}
+
+footer .footer-bootom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.footer-bootom ul {
+    display: flex;
+    gap: 2rem;
+}
+.footer-bootom ul a {
+    color: #391400;
+}
+
+.footer-bootom p {
+    color: #391400a3;
+}
 @media only screen and (max-width: 1200px) {
     .container {
         padding: 0 5%;
@@ -158,7 +236,7 @@ header .header {
         width: 100%;
     }
 
-    .banner .banner-content{
+    .banner .banner-content {
         padding-right: 0;
     }
 
@@ -166,7 +244,37 @@ header .header {
         display: none;
     }
 
-    .banner-content h1{
+    .banner-content h1 {
         font-size: 56px;
+    }
+
+    #partners .partners {
+        justify-content: center;
+    }
+
+    footer{
+        padding: 2rem 0;
+    }
+
+    footer .footer-top {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    footer .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-top ul {
+        gap: 0.2rem;
+    }
+
+    footer .footer-bootom {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 2rem;
     }
 }
