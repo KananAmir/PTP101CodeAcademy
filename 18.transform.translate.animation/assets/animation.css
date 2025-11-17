@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 100px auto;
+    position: relative;
+    animation: bgColorChange 4s ease-in 0s infinite;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: move2;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: forwards; */
+    position: absolute;
+}
+
+/* @keyframes move {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(300%);
+    }
+} */
+
+@keyframes move2 {
+ 0%{
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    background-color: teal;
+    border-radius: 0%;
+    
+ }
+ 25%{
+    top: 0;
+    left: calc(100% - 100px);
+    transform: rotate(90deg);
+    background-color: red;
+
+ }
+ 50%{
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    transform: rotate(180deg);
+    background-color: orange;
+ }
+ 75%{
+    top: calc(100% - 100px);
+    left: 0;
+    transform: rotate(270deg);
+ }
+ 100%{
+    top: 0;
+    left: 0;
+    transform: rotate(360deg);
+    background-color: orange;
+    border-radius: 50%;
+ }
+}
+
+@keyframes bgColorChange {
+ 0%{
+  background-color: #fff;
+  transform: rotate(0deg);
+ }
+ 25%{
+    background-color: #c43f3f;
+    transform: rotate(-90deg);
+ }
+ 50%{
+    background-color: #c95d5d;
+    transform: rotate(-180deg);
+
+ }
+ 75%{
+    background-color: #a7c43f;
+    transform: rotate(-270deg);
+
+ }
+ 100%{
+    background-color: #fff;
+    transform: rotate(-360deg);
+
+ }
+}
+
+
+.heart-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    border: 3px solid black;
+}
+
+.heart-wrapper .fa-heart{
+    color: red;
+    font-size: 3rem;
+    animation: heartBeat 1s ease-in-out 0s infinite alternate;
+}
+
+
+@keyframes heartBeat{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1.8);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+
+@keyframes heartRotate{
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+}
+
